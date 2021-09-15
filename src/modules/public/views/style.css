@@ -1,0 +1,15 @@
+.cardN{
+    width: 16rem;
+    height: 20rem;
+    border: 1px solid #DBDBDB;
+    border-radius: .3rem;
+    /* background-color: black; */
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cardN:hover{
+    box-shadow: 0px 14px 34px 0px #D5E0FC;
+    border: none;
+}

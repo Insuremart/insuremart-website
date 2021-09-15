@@ -1,0 +1,43 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Circular";
+  font-weight: 900;
+  src: url("../src/fonts/circular/CircularStd-Black.otf");
+}
+@font-face {
+  font-family: "Circular";
+  font-weight: 700;
+
+  src: url("../src/fonts/circular/CircularStd-Bold.otf");
+}
+@font-face {
+  font-family: "Circular";
+  font-weight: 300;
+  src: url("../src/fonts/circular/CircularStd-Light.otf");
+}
+@font-face {
+  font-family: "Circular";
+  font-weight: 500;
+  src: url("../src/fonts/circular/CircularStd-Medium.otf");
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: "Circular" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
