@@ -290,12 +290,17 @@ const Homepage = () => {
                 style={{ margin: "auto", marginBottom: "2rem" }}
                 key={element.title}
               >
-                <img
-                  src={element.img}
-                  alt=""
-                  className=" mb-8 w-12 h-12"
-                  // style={{ boxShadow: "0px 14px 34px #BAB4F5" }}
-                />
+               <div className="flex mb-8  justify-between items-center">
+                      <img
+                        src={element.img}
+                        alt=""
+                        className=" w-12 h-12"
+                        // style={{ boxShadow: "0px 14px 34px #BAB4F5" }}
+                      />
+                      {element.status === "available" ? null : (
+                        <p className="py-2 bg-yellow-100 px-4 text-butterflybush-500 text-xs rounded-xl">Coming soon</p>
+                      )}
+                    </div>
                 <p className="text-xl text-butterflybush-500">
                   {element.title}
                 </p>
