@@ -19,9 +19,6 @@ import Travel from "../../../images/icons/insure_global.svg";
 import Person from "../../../images/icons/insure_accident.svg";
 import Heart from "../../../images/icons/insure_cardiogram.svg";
 
-
-
-
 import "./style.css";
 
 Modal.setAppElement("#root");
@@ -149,21 +146,19 @@ const Homepage = () => {
             <div className="my-1 px-1  mx-8 md:mx-0 w-full lg:pl-20 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2">
               <div className="lg:w-4/5">
                 <h1 className="text-3xl font-bold text-butterflybush-500 leading-relaxed	">
-                  Insurance manager that helps in tracking and ensuring faster
-                  compensation.{" "}
+                  Your one-stop shop for all your insurance services.{" "}
                 </h1>
               </div>
               <p
                 xl
                 className="lg:w-4/5 text-justify text-butterflybush-200 font-light	tracking-wide mt-8 mb-8 lg:mb-16"
               >
-                Your one-stop shop for all your insurance services. Buy or renew
-                your insurance policies from any of your preferred insurance
-                providers and get your insurance documents instantly
+                Buy or renew your insurance policies from any of your preferred
+                insurance providers and get your insurance documents instantly
                 Lodge/report a claim in mere seconds, and easily monitor the
-                progress of your claim in real-time. Renew your vehicle license,
+                progress of your claim in real-time Renew your vehicle license,
                 road worthiness and other vehicular documents, along with your
-                motor insurance policy, and receive your documents speedily.
+                motor insurance policy, and receive your documents speedily
               </p>
               <div className="flex mb-16 md:hidden">
                 <button
@@ -270,29 +265,32 @@ const Homepage = () => {
         </div>
 
         <div className="md:hidden mb-40">
-        <p className="w-4/5 leading-relaxed text-4xl text-butterflybush-500 font-bold mx-auto text-center mb-8">
-                Insurance plans
-              </p>
-          <div >
-          {services.map((element) => (
-                  <div class="cardN" style={{margin: "auto", marginBottom:"2rem"}} key={element.title}>
-                    <img
-                      src={element.img}
-                      alt=""
-                      className=" mb-8 w-12 h-12"
-                      // style={{ boxShadow: "0px 14px 34px #BAB4F5" }}
-                    />
-                    <p className="text-xl text-butterflybush-500">
-                      {element.title}
-                    </p>
-                    <p className="w-full mx-auto text-sm font-thin text-left mt-4 text-gray-600 mb-8 tracking-wide">
-                      Buy or renew and customize your motor insurance policy
-                      from any of your preferred insurance providers which
-                      covers loss or accidental damage to your vehicle and/or a
-                      third party
-                    </p>
-                  </div>
-                ))}
+          <p className="w-4/5 leading-relaxed text-4xl text-butterflybush-500 font-bold mx-auto text-center mb-8">
+            Insurance plans
+          </p>
+          <div>
+            {services.map((element) => (
+              <div
+                class="cardN"
+                style={{ margin: "auto", marginBottom: "2rem" }}
+                key={element.title}
+              >
+                <img
+                  src={element.img}
+                  alt=""
+                  className=" mb-8 w-12 h-12"
+                  // style={{ boxShadow: "0px 14px 34px #BAB4F5" }}
+                />
+                <p className="text-xl text-butterflybush-500">
+                  {element.title}
+                </p>
+                <p className="w-full mx-auto text-sm font-thin text-left mt-4 text-gray-600 mb-8 tracking-wide">
+                  Buy or renew and customize your motor insurance policy from
+                  any of your preferred insurance providers which covers loss or
+                  accidental damage to your vehicle and/or a third party
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 
