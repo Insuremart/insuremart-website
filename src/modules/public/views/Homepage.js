@@ -27,60 +27,70 @@ const services = [
   {
     img: `${MotorCar}`,
     title: "Motor Insurance",
+    status: "available",
     content:
       "Buy or renew and customize your motor insurance policy from any of your preferred insurance providers which covers loss or accidental damage to your vehicle and/or a third party ",
   },
   {
     img: `${Fire}`,
     title: "Fire",
+    status: "coming soon",
     content:
       "Buy or renew your fire insurance policy which covers loss or damage to your property as a result of fire",
   },
   {
     img: `${Life}`,
     title: "Life Assurance Policies",
+    status: "coming soon",
     content:
       "Buy, renew, or follow up on your life assurance policies from any of your preferred insurance providers",
   },
   {
     img: `${Ship}`,
     title: "Marine Cargo Insurance",
+    status: "coming soon",
     content:
       "Buy a marine cargo insurance which provides cover for cargo being imported or exported via maritime transport",
   },
   {
     img: `${Home}`,
     title: "Householders",
+    status: "coming soon",
     content:
       "Buy or renew your householder’s policy which covers loss or damages to a residence, along with furniture, fixtures and fittings and other assets      ",
   },
   {
     img: `${Burglar}`,
     title: "Burglary Insurance",
+    status: "coming soon",
     content:
       "Buy or renew your burglary insurance policy which provides cover for loss or damage as a result of burglary/housebreaking or attempt thereof",
   },
   {
     img: `${Gadget}`,
     title: "Gadget Insurance",
+    status: "coming soon",
     content:
       "Buy or renew your gadget insurance policies that provides compensation for loss or damage to your gadgets ,i.e smart phone or watch, tablets, laptops, etc.",
   },
   {
     img: `${Travel}`,
     title: "Travel Insurance",
+    status: "coming soon",
     content:
       "Buy a travel insurance policy for anywhere around the world, from any of your preferred insurance provider",
   },
   {
     img: `${Person}`,
     title: "Personal Accident Insurance",
+    status: "coming soon",
     content:
       "Buy or renew your personal accident insurance which provides financial compensation should you be involved in any accident",
   },
   {
     img: `${Heart}`,
     title: "Health Insurance",
+    status: "coming soon",
     content:
       "Buy and renew and customize your health insurance policies from any of your preferred health insurance providers",
   },
@@ -234,12 +244,17 @@ const Homepage = () => {
               <div class="flex flex-wrap mb-4 p-16">
                 {services.map((element) => (
                   <div class="cardN" key={element.title}>
-                    <img
-                      src={element.img}
-                      alt=""
-                      className=" mb-8 w-12 h-12"
-                      // style={{ boxShadow: "0px 14px 34px #BAB4F5" }}
-                    />
+                    <div className="flex mb-8  justify-between items-center">
+                      <img
+                        src={element.img}
+                        alt=""
+                        className=" w-12 h-12"
+                        // style={{ boxShadow: "0px 14px 34px #BAB4F5" }}
+                      />
+                      {element.status === "available" ? null : (
+                        <p className="py-2 bg-yellow-100 px-4 text-butterflybush-500 text-xs rounded-xl">Coming soon</p>
+                      )}
+                    </div>
                     <p className="text-xl text-butterflybush-500">
                       {element.title}
                     </p>
