@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../../images/icons/omex_logo.svg";
+// import Logo from "../../../images/icons/omex_logo.svg";
 import MenuBar from "../../../images/icons/insure_menu.svg";
 
 const Header = () => {
@@ -7,9 +7,9 @@ const Header = () => {
 
   return (
     <>
-      <header class=" md:flex md:items-center md:justify-between p-4 pb-0 md:pb-4">
-        <div class="flex items-center justify-between mb-4 md:mb-0">
-          <h1 class="leading-none text-2xl text-grey-darkest">
+      <header className=" md:flex md:items-center md:justify-between p-4 pb-0 md:pb-4">
+        <div className="flex items-center justify-between mb-4 md:mb-0">
+          <h1 className="leading-none text-2xl text-grey-darkest">
             <div className="flex align-middle lg:ml-12">
               <a
                 className="text-sm text-mirage-500 font-normal text-xl leading-relaxed inline-block mr-4 whitespace-nowrap lg:mx-4 xl:mx-4 "
@@ -22,8 +22,7 @@ const Header = () => {
           </h1>
 
           <button
-            class="text-black hover:text-orange md:hidden"
-            href="#"
+            className="text-black hover:text-orange md:hidden"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             <img src={MenuBar} alt="" />
@@ -39,26 +38,26 @@ const Header = () => {
           }
           id="example-navbar-danger"
         >
-          <ul class="list-reset md:flex md:items-center ">
-            <li class="md:ml-16 ">
+          <ul className="list-reset md:flex md:items-center ">
+            <li className="md:ml-16 ">
               <a
-                class="block no-underline font-medium text-butterflybush-500 hover:underline py-2 text-grey-darkest hover:no-underline hover:text-black md:border-none md:p-0 "
+                className="block no-underline font-medium text-butterflybush-500 hover:underline py-2 text-grey-darkest hover:no-underline hover:text-black md:border-none md:p-0 "
                 href="/#"
               >
                 About
               </a>
             </li>
-            <li class="md:ml-16">
+            <li className="md:ml-16">
               <a
-                class=" block no-underline font-medium text-butterflybush-500 hover:underline py-2 text-grey-darkest hover:no-underline md:border-none md:p-0"
+                className=" block no-underline font-medium text-butterflybush-500 hover:underline py-2 text-grey-darkest hover:no-underline md:border-none md:p-0"
                 href="/#"
               >
                 Insurance Claims
               </a>
             </li>
-            <li class="md:ml-16">
+            <li className="md:ml-16">
               <a
-                class=" block no-underline font-medium text-butterflybush-500 hover:underline py-2 text-grey-darkest md:border-none md:p-0 hover:no-underline"
+                className=" block no-underline font-medium text-butterflybush-500 hover:underline py-2 text-grey-darkest md:border-none md:p-0 hover:no-underline"
                 href="/#"
               >
                 Contact Us

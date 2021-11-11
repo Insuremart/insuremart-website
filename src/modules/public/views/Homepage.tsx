@@ -1,12 +1,9 @@
 import React from "react";
 import Modal from "react-modal";
 import Header from "../components/Header";
-import Logo from "../../../images/icons/omex_light_logo.svg";
 import ComingSoon from "../../../images/icons/omex_coming_soon.svg";
-import OmexhubImage from "../../../images/icons/omexhub_image.svg";
 import AppStore from "../../../images/icons/appstore.svg";
 import PlayStore from "../../../images/icons/playstore.svg";
-import Location from "../../../images/icons/omex_location.svg";
 import PaperPlane from "../../../images/icons/omex_paperplane.svg";
 import Fire from "../../../images/icons/insure_fire.svg";
 import MotorCar from "../../../images/icons/jeep_insure.svg";
@@ -148,7 +145,7 @@ const Homepage = () => {
               <div className="overflow-hidden px-2 mx-8">
                 <img
                   src="/img/insure_image.png"
-                  alt="insure Image"
+                  alt=""
                   className=""
                 />
               </div>
@@ -159,23 +156,23 @@ const Homepage = () => {
                   Your one-stop shop for all your insurance services.{" "}
                 </h1>
               </div>
-              <p
-                xl
-                className="lg:w-4/5 text-justify text-butterflybush-200 font-light	tracking-wide mt-8 mb-8 lg:mb-16"
-              >
-                Buy or renew your insurance policies from any of your preferred
-                insurance providers and get your insurance documents instantly
-                Lodge/report a claim in mere seconds, and easily monitor the
-                progress of your claim in real-time Renew your vehicle license,
-                road worthiness and other vehicular documents, along with your
-                motor insurance policy, and receive your documents speedily
-              </p>
+     
+              <ul className="lg:w-4/5 text-justify text-butterflybush-200 font-light	tracking-wide mt-8 mb-8 lg:mb-16">
+                <li className="list-decimal mb-4">
+                Buy or renew your insurance policies from any of your preferred insurance providers and get your insurance documents instantly
+                </li>
+                <li className="list-decimal mb-4">
+                Lodge/report a claim in mere seconds, and easily monitor the progress of your claim in real-time
+                </li>
+                <li className="list-decimal mb-4">
+                Renew your vehicle license, road worthiness and other vehicular documents, along with your motor insurance policy, and receive your documents speedily                </li>
+              </ul>
               <div className="flex mb-16 md:hidden">
                 <button
                   className="flex bg-butterflybush-500 px-2 py-2 text-white rounded-2xl lg:w-64 lg:h-20 mr-4"
                   onClick={() => setMobModalIsOpen(true)}
                 >
-                  <img src={PlayStore} className=" my-auto w-12 h-12 mr-2" />
+                  <img  alt="" src={PlayStore} className=" my-auto w-12 h-12 mr-2" />
                   <p className="w-full text-left mr-8 lg:pr-4 font-light lg:mt-2 lg:ml-2 lg:tracking-widest">
                     Download on play store{" "}
                   </p>
@@ -184,7 +181,7 @@ const Homepage = () => {
                   className="flex bg-butterflybush-500 px-2 py-2 text-white rounded-2xl lg:w-64 lg:h-20"
                   onClick={() => setMobModalIsOpen(true)}
                 >
-                  <img src={AppStore} className=" my-auto w-12 h-12 mr-2" />
+                  <img  alt="" src={AppStore} className=" my-auto w-12 h-12 mr-2" />
                   <p className="w-full text-left mr-8 lg:pr-4 font-light lg:mt-2 lg:ml-2 lg:tracking-widest">
                     Download on app store{" "}
                   </p>
@@ -196,7 +193,7 @@ const Homepage = () => {
                     className="flex bg-butterflybush-500 px-2 py-2 text-white rounded-2xl lg:w-60 lg:h-20 mr-4"
                     onClick={() => setModalIsOpen(true)}
                   >
-                    <img src={PlayStore} className=" my-auto w-12 h-12 mr-2" />
+                    <img  alt="" src={PlayStore} className=" my-auto w-12 h-12 mr-2" />
                     <p className="w-full text-left mr-8 lg:pr-4 font-light lg:mt-2 lg:ml-2 lg:tracking-widest">
                       Download on play store{" "}
                     </p>
@@ -205,7 +202,7 @@ const Homepage = () => {
                     className="flex bg-butterflybush-500 px-2 py-2 text-white rounded-2xl lg:w-60 lg:h-20"
                     onClick={() => setModalIsOpen(true)}
                   >
-                    <img src={AppStore} className=" my-auto w-12 h-12 mr-2" />
+                    <img  alt="" src={AppStore} className=" my-auto w-12 h-12 mr-2" />
                     <p className="w-full text-left mr-8 lg:pr-4 font-light lg:mt-2 lg:ml-2 lg:tracking-widest">
                       Download on app store{" "}
                     </p>
@@ -217,33 +214,34 @@ const Homepage = () => {
         </div>
         <div className="md:hidden flex justify-center mt-16 mb-48 ">
           <div className="">
-            <img
+            <img alt=""
               src="/img/cornerstone.png"
               className="w-28 h-20 mr-16 mt-16 ml-16"
             />
             <img
+             alt=""
               src="/img/mutual_benefits.png"
               className="w-28 h-20 mr-16 mt-16 ml-16"
             />
-            <img src="/img/allianz.png" className="w-28 h-20 mt-16 ml-16" />
+            <img  alt="" src="/img/allianz.png" className="w-28 h-20 mt-16 ml-16" />
           </div>
         </div>
         <div className="hidden md:flex items-center justify-center mt-16 mb-48 ">
           <div className="flex items-center justify-center ">
-            <img src="/img/cornerstone.png" className="w-28 h-20 mr-16" />
-            <img src="/img/mutual_benefits.png" className="w-28 h-20 mr-16" />
-            <img src="/img/allianz.png" className="w-28 h-20" />
+            <img alt="" src="/img/cornerstone.png" className="w-28 h-20 mr-16" />
+            <img  alt="" src="/img/mutual_benefits.png" className="w-28 h-20 mr-16" />
+            <img  alt="" src="/img/allianz.png" className="w-28 h-20" />
           </div>
         </div>
         <div className="hidden md:block mb-64">
-          <div class="flex flex-wrap mb-4">
-            <div class="w-9/12">
+          <div className="flex flex-wrap mb-4">
+            <div className="w-9/12">
               <p className="w-4/5 leading-relaxed text-4xl text-butterflybush-500 font-bold mx-auto text-center">
                 Insurance plans
               </p>
-              <div class="flex flex-wrap mb-4 p-16">
+              <div className="flex flex-wrap mb-4 p-16">
                 {services.map((element) => (
-                  <div class="cardN" key={element.title}>
+                  <div className="cardN" key={element.title}>
                     <div className="flex mb-8  justify-between items-center">
                       <img
                         src={element.img}
@@ -252,7 +250,9 @@ const Homepage = () => {
                         // style={{ boxShadow: "0px 14px 34px #BAB4F5" }}
                       />
                       {element.status === "available" ? null : (
-                        <p className="py-2 bg-yellow-100 px-4 text-butterflybush-500 text-xs rounded-xl">Coming soon</p>
+                        <p className="py-2 bg-yellow-100 px-4 text-butterflybush-500 text-xs rounded-xl">
+                          Coming soon
+                        </p>
                       )}
                     </div>
                     <p className="text-xl text-butterflybush-500">
@@ -268,7 +268,7 @@ const Homepage = () => {
                 ))}
               </div>
             </div>
-            <div class="w-3/12 ">
+            <div className="w-3/12 ">
               <img
                 src="/img/insure_mobile.png"
                 alt=""
@@ -286,21 +286,23 @@ const Homepage = () => {
           <div>
             {services.map((element) => (
               <div
-                class="cardN"
+              className="cardN"
                 style={{ margin: "auto", marginBottom: "2rem" }}
                 key={element.title}
               >
-               <div className="flex mb-8  justify-between items-center">
-                      <img
-                        src={element.img}
-                        alt=""
-                        className=" w-12 h-12"
-                        // style={{ boxShadow: "0px 14px 34px #BAB4F5" }}
-                      />
-                      {element.status === "available" ? null : (
-                        <p className="py-2 bg-yellow-100 px-4 text-butterflybush-500 text-xs rounded-xl">Coming soon</p>
-                      )}
-                    </div>
+                <div className="flex mb-8  justify-between items-center">
+                  <img
+                    src={element.img}
+                    alt=""
+                    className=" w-12 h-12"
+                    // style={{ boxShadow: "0px 14px 34px #BAB4F5" }}
+                  />
+                  {element.status === "available" ? null : (
+                    <p className="py-2 bg-yellow-100 px-4 text-butterflybush-500 text-xs rounded-xl">
+                      Coming soon
+                    </p>
+                  )}
+                </div>
                 <p className="text-xl text-butterflybush-500">
                   {element.title}
                 </p>
@@ -321,7 +323,7 @@ const Homepage = () => {
                 <div className="w-full sm:w-1/5 pr-6 flex flex-col space-y-4">
                   <a
                     className="text-sm text-mirage-500 font-normal text-xl leading-relaxed inline-block py-2 whitespace-nowrap"
-                    href="#"
+                    href="./"
                   >
                     <img
                       src="/img/logo_insure.jpg"
@@ -384,17 +386,17 @@ const Homepage = () => {
               {/* <input type="text" className="text-center px-16 py-4 w-3/5 rounded-2xl bg-butterflybush-200"
                 />
                  */}
-              <div class="hero bg-gredient-dark h-400px flex flex-col px-2">
-                <div class="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
-                  <form class="flex flex-row">
+              <div className="hero bg-gredient-dark h-400px flex flex-col px-2">
+                <div className="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
+                  <form className="flex flex-row">
                     <input
-                      class=" px-4 rounded-l-2xl h-16 bg-gray-100 text-butterflybush-200 py-2 font-light w-full py-1 px-2 outline-none text-lg text-gray-600"
+                      className=" px-4 rounded-l-2xl h-16 bg-gray-100 text-butterflybush-200 py-2 font-light w-full py-1 px-2 outline-none text-lg text-gray-600"
                       type="text"
                       placeholder="Please enter your email"
                     />
-                    <span class="flex items-center bg-gray-100 rounded-2xl rounded-l-none border-0  font-bold text-grey-100">
+                    <span className="flex items-center bg-gray-100 rounded-2xl rounded-l-none border-0  font-bold text-grey-100">
                       <button
-                        class="bg-butterflybush-500 hover:bg-gredient-light text-lg text-white font-bold py-3 px-6 rounded-2xl"
+                        className="bg-butterflybush-500 hover:bg-gredient-light text-lg text-white font-bold py-3 px-6 rounded-2xl"
                         onClick={() => setMobModalIsOpen(false)}
                       >
                         <img src={PaperPlane} alt="" />
@@ -437,17 +439,17 @@ const Homepage = () => {
               <p className="font-light text-butterflybush-200 w-5/5 mx-auto mt-4 text-center leading-relaxed mb-12">
                 Would you like us to inform you when we go live
               </p>
-              <div class="hero bg-gredient-dark  flex flex-col px-2">
-                <div class="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
-                  <form class="flex flex-row">
+              <div className="hero bg-gredient-dark  flex flex-col px-2">
+                <div className="search-box mx-auto my-auto w-full sm:w-full md:w-full lg:w-3/4 xl:w-3/4">
+                  <form className="flex flex-row">
                     <input
-                      class=" px-4 rounded-l-2xl h-16 bg-gray-100 text-butterflybush-200 py-2 font-light w-full py-1 px-2 outline-none text-lg text-gray-600"
+                      className=" px-4 rounded-l-2xl h-16 bg-gray-100 text-butterflybush-200 py-2 font-light w-full py-1 px-2 outline-none text-lg text-gray-600"
                       type="text"
                       placeholder="Please enter email"
                     />
-                    <span class="flex items-center bg-gray-100 rounded-2xl rounded-l-none border-0  font-bold text-grey-100">
+                    <span className="flex items-center bg-gray-100 rounded-2xl rounded-l-none border-0  font-bold text-grey-100">
                       <button
-                        class="bg-butterflybush-500 hover:bg-gredient-light text-lg text-white h-16 font-bold px-6 rounded-2xl"
+                        className="bg-butterflybush-500 hover:bg-gredient-light text-lg text-white h-16 font-bold px-6 rounded-2xl"
                         onClick={() => setMobModalIsOpen(false)}
                       >
                         <img src={PaperPlane} alt="" className="h-16 w-16" />
