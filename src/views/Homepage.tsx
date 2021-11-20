@@ -241,7 +241,7 @@ const Homepage = () => {
               </p>
               <div className="flex flex-wrap mb-4 p-16">
                 {services.map((element) => (
-                  <div className="cardN" key={element.title}>
+                  <div className="cardN cursor-pointer" key={element.title}>
                     <div className="flex mb-8  justify-between items-center">
                       <img
                         src={element.img}

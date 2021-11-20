@@ -13,7 +13,7 @@ const Header = () => {
             <div className="flex align-middle lg:ml-12">
               <a
                 className="text-sm text-mirage-500 font-normal text-xl leading-relaxed inline-block mr-4 whitespace-nowrap lg:mx-4 xl:mx-4 "
-                href="/#"
+                href="/"
               >
                 <img src="/img/logo_insure.jpg" alt=""  className="w-24 h-16"/>
               </a>
@@ -42,7 +42,7 @@ const Header = () => {
             <li className="md:ml-16 ">
               <a
                 className="block no-underline font-medium text-butterflybush-500 hover:underline py-2 text-grey-darkest hover:no-underline hover:text-black md:border-none md:p-0 "
-                href="/#"
+                href="/"
               >
                 About
               </a>
@@ -50,7 +50,7 @@ const Header = () => {
             <li className="md:ml-16">
               <a
                 className=" block no-underline font-medium text-butterflybush-500 hover:underline py-2 text-grey-darkest hover:no-underline md:border-none md:p-0"
-                href="/#"
+                href="/"
               >
                 Insurance Claims
               </a>
@@ -58,7 +58,7 @@ const Header = () => {
             <li className="md:ml-16">
               <a
                 className=" block no-underline font-medium text-butterflybush-500 hover:underline py-2 text-grey-darkest md:border-none md:p-0 hover:no-underline"
-                href="/#"
+                href="/"
               >
                 Contact Us
               </a>
@@ -80,7 +80,7 @@ const Header = () => {
                     <div className="flex align-middle ml-4">
                       <a
                         className="text-sm text-mirage-500 font-normal text-xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap lg:mx-4 xl:mx-4 "
-                        href="/#"
+                        href="/"
                       >
                         <img src={Logo} alt="" />
                       </a>
@@ -108,7 +108,7 @@ const Header = () => {
                       <li>
                         <a
                           class="lg:p-4 lg:ml-40 py-3 px-0 block border-b-2 border-transparent hover:border-blueribbon-500"
-                          href="/#"
+                          href="/"
                         >
                           About
                         </a>
@@ -116,7 +116,7 @@ const Header = () => {
                       <li>
                         <a
                           class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-blueribbon-500"
-                          href="/#"
+                          href="/"
                         >
                           Delivery
                         </a>
@@ -124,7 +124,7 @@ const Header = () => {
                       <li>
                         <a
                           class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-blueribbon-500"
-                          href="/#"
+                          href="/"
                         >
                           Contact Us
                         </a>
