@@ -1,16 +1,26 @@
-import React from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import React , {Suspense}from 'react';
 import './App.css';
-
-import HomePage from './modules/public/views/Homepage'
+import { BrowserRouter as Router } from "react-router-dom";
+import PublicRouter from './routers/PublicRouter';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </Router>
+    <div>
+       <Suspense
+        fallback={
+          <div
+            className="h-full flex justify-center items-center"
+            style={{ height: "100vh" }}
+          >
+            <p>Welcome</p>
+          </div>
+        }
+      >
+        <Router >
+          <PublicRouter />
+        </Router>
+      </Suspense>
+    </div>
   );
 }
 

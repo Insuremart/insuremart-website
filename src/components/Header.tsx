@@ -1,6 +1,6 @@
 import React from "react";
 // import Logo from "../../../images/icons/omex_logo.svg";
-import MenuBar from "../../../images/icons/insure_menu.svg";
+import MenuBar from "../assets/icons/insure_menu.svg";
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);

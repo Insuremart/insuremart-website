@@ -1,20 +1,20 @@
 import React from "react";
 import Modal from "react-modal";
 import Header from "../components/Header";
-import ComingSoon from "../../../images/icons/omex_coming_soon.svg";
-import AppStore from "../../../images/icons/appstore.svg";
-import PlayStore from "../../../images/icons/playstore.svg";
-import PaperPlane from "../../../images/icons/omex_paperplane.svg";
-import Fire from "../../../images/icons/insure_fire.svg";
-import MotorCar from "../../../images/icons/jeep_insure.svg";
-import Life from "../../../images/icons/insure_life.svg";
-import Ship from "../../../images/icons/insure_ship.svg";
-import Home from "../../../images/icons/insure_home.svg";
-import Burglar from "../../../images/icons/insure_burglar.svg";
-import Gadget from "../../../images/icons/gadget.svg";
-import Travel from "../../../images/icons/insure_global.svg";
-import Person from "../../../images/icons/insure_accident.svg";
-import Heart from "../../../images/icons/insure_cardiogram.svg";
+import ComingSoon from "../assets/icons/omex_coming_soon.svg";
+import AppStore from "../assets/icons/appstore.svg";
+import PlayStore from "../assets/icons/playstore.svg";
+import PaperPlane from "../assets/icons/omex_paperplane.svg";
+import Fire from "../assets/icons/insure_fire.svg";
+import MotorCar from "../assets/icons/jeep_insure.svg";
+import Life from "../assets/icons/insure_life.svg";
+import Ship from "../assets/icons/insure_ship.svg";
+import Home from "../assets/icons/insure_home.svg";
+import Burglar from "../assets/icons/insure_burglar.svg";
+import Gadget from "../assets/icons/gadget.svg";
+import Travel from "../assets/icons/insure_global.svg";
+import Person from "../assets/icons/insure_accident.svg";
+import Heart from "../assets/icons/insure_cardiogram.svg";
 
 import "./style.css";
 
